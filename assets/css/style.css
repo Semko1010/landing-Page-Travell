@@ -1,58 +1,203 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    width: 1440px;
-}
-
-html {
-    font-size: 10px;
-}
-
-
-/*###########  Nav  #############*/
-
-nav {
-    background-color: rgb(237, 227, 215);
-}
-
-nav h1 {
-    display: inline-block;
-    font-size: 2rem;
-    margin: 10px 0 0 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 10px;
-}
-
-nav ul {
-    text-align: end;
-    margin: -25px 30px 0 0;
-    padding-bottom: 30px;
-    font-size: 2rem;
-}
-
-
-/*###########  Main  #############*/
-
-main {
-    background: url("../img/main.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-main h2 {
-    color: white;
-    font-size: 5rem;
-    padding: 150px 0 0 50px;
-}
-
-main p {
-    color: white;
-    font-size: 2rem;
-    padding: 150px 0 0 50px;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        margin: 0 auto;
+    }
+    
+    html {
+        font-size: 10px;
+    }
+    /*###########  Nav  #############*/
+    
+    nav {
+        background-color: rgb(43, 43, 43);
+        opacity: 0.7;
+        position: sticky;
+        top: 5px;
+    }
+    
+    nav h1 {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 10px 0 0 20px;
+        color: white;
+    }
+    
+    nav h1::after {
+        content: "";
+        font-size: 3rem;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    nav ul {
+        text-align: end;
+        margin: -25px 30px 0 0;
+        padding-bottom: 20px;
+        font-size: 2rem;
+    }
+    /*###########  Main  #############*/
+    
+    main {
+        background: url("../img/main.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0 0 200px 0;
+        background-attachment: fixed;
+    }
+    
+    main h2 {
+        color: rgb(255, 255, 255);
+        font-size: 7rem;
+        padding: 150px 0 0 50px;
+        font-family: 'IM Fell English SC', serif;
+    }
+    
+    main p:nth-of-type(1) {
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        padding: 150px 0 0 50px;
+        width: 800px;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    main p:nth-of-type(2) {
+        display: inline-block;
+        color: white;
+        font-size: 3rem;
+        border: 1px solid white;
+        margin: 150px 0 0 50px;
+        padding: 15px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    main p:nth-of-type(2):hover {
+        background: rgb(208, 208, 208, 0.3);
+        color: black;
+    }
+    /*###########  article  #############*/
+    
+    article {
+        background: url("../img/annie-spratt-xvU-X0GV9-o-unsplash\ \(1\).jpg");
+        border-top: 10px solid rgb(53, 53, 53);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .egypt img {
+        width: 25%;
+        margin: 70px 50px 20px 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 0 50px rgb(38, 38, 38);
+    }
+    
+    .egypt {
+        text-align: center;
+    }
+    
+    .infos p {
+        display: inline-block;
+        width: 25%;
+        background: linear-gradient(rgb(4, 4, 4, 0.3), rgb(133, 133, 133, 0.2));
+        font-size: 2rem;
+        margin: 0 50px;
+        border-radius: 10px;
+        padding: 15px 0 50px 0;
+        margin-bottom: 50px;
+        color: white;
+    }
+    
+    article span {
+        font-size: 4rem;
+        font-family: 'IM Fell English SC', serif;
+        text-decoration: underline;
+        color: white;
+    }
+    
+    .infos {
+        text-align: center;
+    }
+    
+    .mallorca_div {
+        display: flex;
+        margin: 100px 0 0 0;
+        padding-bottom: 50px;
+        margin-top: 150px;
+    }
+    
+    .mallorca_div span {
+        font-size: 10rem;
+        color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .mallorca_div h3 {
+        width: 750px;
+        font-size: 10rem;
+        font-family: 'IM Fell English SC', serif;
+        margin: 0 0 0 100px;
+        color: rgb(0, 0, 0, 0.4);
+    }
+    
+    .mallorca {
+        width: 45%;
+        height: 250%;
+        margin: 0 150px 0 auto;
+        border-radius: 20px;
+        box-shadow: 0 0 50px rgb(38, 38, 38);
+    }
+    
+    .check {
+        padding-bottom: 0px;
+    }
+    /*###########  footer  #############*/
+    
+    .footer {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 100px 0 0 0;
+        padding: 30px 0 30px 0;
+    }
+    
+    .btn-grad {
+        background-image: linear-gradient(to right, #bdc3c7 0%, #969696 51%, #bdc3c7 100%)
+    }
+    
+    .btn-grad {
+        margin: 30px 150px 0 auto;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 50px rgb(38, 38, 38);
+        border-radius: 10px;
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+        width: 45%;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    .btn-grad:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .pirate {
+        width: 20%;
+        margin-top: 50px;
+    }
